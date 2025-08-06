@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Enhanced Form Page</h1>
+        <p>This page shows lists, tables, media, and an advanced HTML5 form.</p>
+    </header>
+
+    <section>
+        <h2>My Courses</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Data Science</li>
+            <li>Mobile App Development</li>
+        </ul>
+
+        <h2>Weekly Schedule</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Activity</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>HTML Workshop</td>
+                    <td>10:00 AM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>CSS Design Session</td>
+                    <td>2:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>JavaScript Lab</td>
+                    <td>11:00 AM</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Sample Image</h2>
+        <img src="https://via.placeholder.com/150" alt="Sample Media">
+    </section>
+
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required autocomplete="name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email"><br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required><br><br>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select...</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Skills & Preferences</legend>
+
+                <label>Skills:</label><br>
+                <input type="checkbox" id="html" name="skills" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="checkbox" id="css" name="skills" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="checkbox" id="js" name="skills" value="JavaScript">
+                <label for="js">JavaScript</label><br><br>
+
+                <label for="bio">Short Bio:</label><br>
+                <textarea id="bio" name="bio" placeholder="Write something about yourself..." rows="4" cols="50" required></textarea><br><br>
+
+                <label for="profile-pic">Upload Profile Picture:</label>
+                <input type="file" id="profile-pic" name="profile-pic" accept="image/*"><br><br>
+
+                <label for="refcode">Referral Code (Read Only):</label>
+                <input type="text" id="refcode" value="PLP2025" readonly><br><br>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PLP Hackathon</p>
+    </footer>
+
+</body>
+</html>
